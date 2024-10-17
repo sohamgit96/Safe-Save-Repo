@@ -436,7 +436,7 @@ async def set_rename_command(user_id, custom_rename_tag):
 # Function to get the user's custom renaming preference
 def get_user_rename_preference(user_id):
     # Retrieve the user's custom renaming tag if set, or default to 'safe_repo'
-    return user_rename_preferences.get(str(user_id), 'safe_repo')
+    return user_rename_preferences.get(str(user_id), '@UmeshGang')
 
 # Function to set custom caption preference
 async def set_caption_command(user_id, custom_caption):
@@ -463,7 +463,7 @@ async def settings_command(event):
         [Button.inline("Remove Words", b'delete'), Button.inline("Reset", b'reset')],
         [Button.inline("Login", b'addsession'), Button.inline("Logout", b'logout')],
         [Button.inline("Set Thumbnail", b'setthumb'), Button.inline("Remove Thumbnail", b'remthumb')],
-        [Button.url("Report Errors", "https://t.me/safe_repo")]
+        [Button.url("Report Errors", "https://t.me/UG111_bot")]
     ]
     
     await gf.send_message(
